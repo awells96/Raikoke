@@ -112,9 +112,9 @@ plt.rcParams.update(params)
 fig, ax = plt.subplots(figsize=(20, 12))
 
 #Plot area averaged column SO2 over time
-ax.plot(days, omps_area_average, 'tab:blue', label = 'OMPS-NM, e folding time = ' + str(omps_e_time))
-ax.plot(days, so2_only, 'red', label = 'UKESM1 SO2only, e folding time = ' + str(so2_only_e_time))
-ax.plot(days, so2_ash, 'darkred', label = 'UKESM1 SO2+ash, e folding time = ' + str(so2_ash_e_time))
+ax.plot(days, omps_area_average, 'tab:blue', label = 'OMPS-NM, e folding time = ' + str(omps_e_time) + ' days')
+ax.plot(days, so2_only, 'red', label = 'UKESM1 SO2only, e folding time = ' + str(so2_only_e_time) + ' days')
+ax.plot(days, so2_ash, 'darkred', label = 'UKESM1 SO2+ash, e folding time = ' + str(so2_ash_e_time) + ' days')
 
 ax.grid(which = 'minor', axis = 'y', alpha = 0.2)
 ax.grid(which = 'minor', axis = 'x', alpha = 0.2)
